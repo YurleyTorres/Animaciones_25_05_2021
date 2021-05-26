@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: #228bec;
+  padding: 10px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background: #f0ec28;
+  border-radius: 100px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+          animation-name: parpadeo;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.nube {
+  position: relative;
+  left: 20%;
+  top: 15%;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+}
+
+.nube:nth-of-type(2) {
+  position: absolute;
+  left: 5px;
+  top: 65px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+}
+
+.nube:nth-of-type(3) {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    width: 150px;
+    left: 50px;
+    top: 15%;
+  }
+  100% {
+    width: 150px;
+    left: 25%;
+    top: 15%;
+  }
+}
+
+@keyframes mover {
+  0% {
+    width: 150px;
+    left: 50px;
+    top: 15%;
+  }
+  100% {
+    width: 150px;
+    left: 25%;
+    top: 15%;
+  }
+}
+@-webkit-keyframes parpadeo {
+  0% {
+    -webkit-box-shadow: 0px 0px 10px white;
+            box-shadow: 0px 0px 10px white;
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+}
+@keyframes parpadeo {
+  0% {
+    -webkit-box-shadow: 0px 0px 10px white;
+            box-shadow: 0px 0px 10px white;
+  }
+  25% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+  75% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+            box-shadow: 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white, 0px 0px 100px white;
+  }
+}
